@@ -1,0 +1,19 @@
+INSTRUCOES RAPIDAS PARA ENTREGA
+
+1. Extraia este arquivo ZIP.
+2. Abra a pasta portfolio_toque_gourmet no Visual Studio Code.
+3. Confira se existem estes arquivos e pastas:
+   - index.html
+   - css/estilo.css
+   - js/script.js
+   - README.md
+4. Crie um repositorio publico no GitHub com um nome que contenha seu nome, por exemplo:
+   portfolio-luiz-henrique-pereira
+5. Envie os arquivos para o GitHub.
+6. Ative o GitHub Pages em Settings > Pages > Deploy from a branch > main > /root.
+7. Copie o link publicado do site e o link do repositorio publico.
+8. Cole os links no modelo de entrega da atividade.
+9. Tire prints das secoes Sobre mim, Formacao, Portfolio e Contato com a URL do GitHub Pages visivel no navegador.
+10. Exporte o documento final em PDF e envie no AVA.
+
+IMPORTANTE: os prints nao podem mostrar localhost nem 127.0.0.1.

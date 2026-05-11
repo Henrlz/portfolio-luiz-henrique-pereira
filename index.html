@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Luiz Henrique Pereira</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <!-- Cabeçalho fixo com menu visível em todas as seções do site -->
+  <header class="cabecalho">
+    <nav class="navegacao" aria-label="Menu principal">
+      <a class="marca" href="#sobre" aria-label="Ir para o início do portfólio">
+        <span class="marca__icone">&lt;/&gt;</span>
+        <span>Luiz Henrique Pereira</span>
+      </a>
+
+      <!-- Botão utilizado pelo JavaScript para abrir/fechar o menu em telas menores -->
+      <button class="botao-menu" id="botaoMenu" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="menu" id="menuPrincipal">
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <!-- Alternância de tema claro/escuro feita com JavaScript -->
+      <button class="botao-tema" id="botaoTema" type="button" aria-label="Alternar tema do site">Tema escuro</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero secao" id="sobre">
+      <div class="hero__texto">
+        <p class="etiqueta">Portfólio pessoal</p>
+        <h1>Olá, eu sou <span>Luiz Henrique Pereira</span>.</h1>
+        <p>
+          Sou graduando em Ciência da Computação, com foco em automação de processos,
+          análise de dados e desenvolvimento de soluções digitais. Tenho experiência
+          prática em backoffice tecnológico, Excel Avançado, VBA, dashboards e criação
+          de projetos web com HTML, CSS e JavaScript.
+        </p>
+        <div class="acoes">
+          <a class="botao botao--primario" href="#portfolio">Ver projeto</a>
+          <a class="botao botao--secundario" href="#contato">Fale comigo</a>
+        </div>
+      </div>
+
+      <aside class="cartao-perfil" aria-label="Resumo do perfil">
+        <div class="avatar">LP</div>
+        <h2>Analista de Backoffice / Automação de Processos</h2>
+        <p>HTML5 • CSS3 • JavaScript • Excel VBA</p>
+        <p>Automações, dashboards, sites responsivos e soluções para melhoria de rotinas.</p>
+      </aside>
+    </section>
+
+    <section class="secao" id="formacao">
+      <p class="etiqueta">Formação</p>
+      <h2>Formação e conhecimentos</h2>
+      <div class="grade-cards">
+        <article class="card">
+          <h3>Curso atual</h3>
+          <p>
+            Bacharelado em Ciência da Computação pela UNINTER, em andamento, com
+            aplicação prática de lógica de programação, estrutura web, estilização CSS
+            e interações com JavaScript.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Formação técnica e tecnologias</h3>
+          <p>
+            Técnico em Informática integrado ao Ensino Médio. Conhecimentos em HTML, CSS,
+            JavaScript, Excel Avançado, VBA, Power Query, dashboards, Pacote Office,
+            ERP Omie e automação de rotinas administrativas e fiscais.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Idiomas e perfil profissional</h3>
+          <p>
+            Português nativo e inglês intermediário. Perfil analítico, orientado a dados,
+            eficiência operacional e melhoria contínua, com integração entre tecnologia
+            e áreas de negócio.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao secao-destaque" id="portfolio">
+      <p class="etiqueta">Portfólio</p>
+      <h2>Projeto realizado</h2>
+      <div class="projeto">
+        <div>
+          <h3>Toque Gourmet Especial</h3>
+          <p>
+            Site desenvolvido para a marca Toque Gourmet Especial, negócio de pipocas
+            gourmet. O projeto apresenta sabores, baldes, opções para eventos e caminhos
+            de contato para clientes.
+          </p>
+          <ul class="lista-projeto">
+            <li>Organização visual de produtos e categorias.</li>
+            <li>Layout responsivo para computador e celular.</li>
+            <li>Links externos para atendimento e redes sociais.</li>
+          </ul>
+        </div>
+        <div class="projeto__acoes">
+          <a class="botao botao--primario" href="https://toquegourmetespecial.com.br/" target="_blank" rel="noopener noreferrer">
+            Abrir site publicado
+          </a>
+          <span class="tag">Projeto real</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="contato">
+      <p class="etiqueta">Contato</p>
+      <h2>Entre em contato</h2>
+      <p class="texto-suporte">
+        Preencha o formulário abaixo para entrar em contato comigo. O envio é simulado
+        para demonstrar a validação obrigatória com JavaScript.
+      </p>
+
+      <form class="formulario" id="formContato" novalidate>
+        <div class="campo">
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" type="text" placeholder="Digite seu nome completo">
+          <small class="erro" id="erroNome"></small>
+        </div>
+
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" placeholder="usuario@dominio.com">
+          <small class="erro" id="erroEmail"></small>
+        </div>
+
+        <div class="campo">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem"></textarea>
+          <small class="erro" id="erroMensagem"></small>
+        </div>
+
+        <button class="botao botao--primario" type="submit">Enviar mensagem</button>
+        <p class="mensagem-sucesso" id="mensagemSucesso" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; 2026 Luiz Henrique Pereira. Portfólio desenvolvido com HTML5, CSS3 e JavaScript.</p>
+    <p>E-mail: Luizhepe04@outlook.com | LinkedIn: www.linkedin.com/in/luiz-henrique-pereira-077226315</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
